@@ -9,6 +9,7 @@ Este es un proyecto de pagina web que muestra informacion acerca del cantante co
 - BOOTSTRAP
 - SASS
 - AOS
+- SEO
 
 ## ESCTRUCTURA DEL PROYECTO FINAL:
 
@@ -36,3 +37,5 @@ El proyecto esta estructurado de la siguiente manera:
 - La carpeta de sass ("scss/") contiene el archivo principal (main.scss), dentro
   de esa misma carpeta de "scss/" tambien contiene una carpeta (partials/) donde se encuentran los 5 archivos de sass (index.scss, photos.scss, albums.scss, tours.scss,
   contact.scss).
+
+- la carpeta de ("scss/") y el archivo (main.scss) estan compilados con la carpeta de ("css/") y el archivo (styles.css) usando el comando "sass --watch scss/main.scss css/styles.css"
