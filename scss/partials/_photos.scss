@@ -5,14 +5,14 @@
     background-color:$background-color-main-photos-videos;
 
     #main__photos__videos__container {
-        $padding-bottom-container-video-photo: 60px + 60;
-        $padding-top-container-video-photo: 65px + 65;
+        $padding-bottom-container-video-photo: 6rem + 6;
+        $padding-top-container-video-photo: 7rem + 6;
 
         padding-bottom: $padding-bottom-container-video-photo;
         padding-top: $padding-top-container-video-photo;
 
         @media screen and (max-width: 912px) {
-            padding-bottom: 352px;
+            padding-bottom: 35.2rem;
         }
 
         .main__title__photos {
@@ -29,7 +29,7 @@
 
             }
 
-            @include mainTitlePhotos(#777777, 16px 0 16px 0, 5rem, italic, none, none);
+            @include mainTitlePhotos(#777777, 1.6rem 0 1.6rem 0, 5rem, italic, none, none);
 
             @media screen and (max-width:340px){
                 font-size: 2rem;
@@ -57,13 +57,13 @@
                 padding-top: $padding-top-img-photos;
             }
 
-            @include containerImgPhotos(flex, wrap, row, space-evenly, center, 70px);
+            @include containerImgPhotos(flex, wrap, row, space-evenly, center, 7rem);
 
             .img__photos {
-                $height-img-photos: 100px * 2;
-                $width-img-photos: 100px + 100;
-                $border-img-photos: #3c502a solid 4px;
-                $border-radius-img-photos: 10px;
+                $height-img-photos: 10rem + 10;
+                $width-img-photos: 15rem + 5;
+                $border-img-photos: #3c502a solid 0.4rem;
+                $border-radius-img-photos: 1rem;
 
                 height: $height-img-photos;
                 width: $width-img-photos;
@@ -71,23 +71,23 @@
                 border-radius: $border-radius-img-photos;
 
                 @media screen and (max-width:408px){
-                    height: 100px;
-                    width: 100px;
+                    height: 10rem;
+                    width: 10rem;
                 }
 
                 @media screen and (max-width:340px){
-                    height: 100px;
-                    width: 100px;
+                    height: 10rem;
+                    width: 10rem;
                 }
 
                 @media screen and (max-width:269px){
-                    height: 100px;
-                    width: 100px;
+                    height: 10rem;
+                    width: 10rem;
                 }
 
                 @media screen and (max-width:102px) {      
-                    height: 100px;
-                    width: 42px;
+                    height: 10rem;
+                    width: 4.2rem;
                 }
             }
         }
@@ -104,7 +104,7 @@
                 text-align: $text-align-title-videos;
             }
 
-            @include mainTitleVideos(#777777, 90px 0 0 0, 5rem, italic, none, none);
+            @include mainTitleVideos(#777777, 9rem 0 0 0, 5rem, italic, none, none);
 
             @media screen and (max-width:340px){
                 font-size: 2rem;
@@ -134,30 +134,30 @@
             @include containerVideosPhotos(flex, wrap, row, space-evenly, center);
             
             .videos__main {
-                $width-videos-main: 300px + 100;
-                $height-videos-main: 200px * 2;
+                $width-videos-main: 20rem * 2;
+                $height-videos-main: 20rem + 20;
 
                 width: $width-videos-main;
                 height: $height-videos-main;
 
                 @media screen and (max-width:408px){
-                    width: 300px;
-                    height: 300px;    
+                    width: 30rem;
+                    height: 30rem;    
                 }
 
                 @media screen and (max-width:340px){
-                    width: 200px;
-                    height: 200px;
+                    width: 20rem;
+                    height: 20rem;
                 }
 
                 @media screen and (max-width:269px){
-                    width: 100px;
-                    height: 100px;
+                    width: 10rem;
+                    height: 10rem;
                 }
 
                 @media screen and (max-width:102px) {      
-                    width: 50px;
-                    height: 50px;
+                    width: 5rem;
+                    height: 5rem;
                 }
             }
         }

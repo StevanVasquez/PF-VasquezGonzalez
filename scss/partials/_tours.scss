@@ -16,7 +16,7 @@
             text-align: $text-align-title-tour;
         }
         
-        @include titleTours(40px, 40px, 6rem, #777777, normal, italic, none);
+        @include titleTours(4rem, 4rem, 6rem, #777777, normal, italic, none);
         
         @media screen and (max-width: 208px) {
             font-size: 1.7rem;
@@ -87,13 +87,13 @@
             padding-bottom: $padding-bottom-img-tour;
         }
         @include mainImgTour (flex, wrap, row, space-evenly, 
-        center, 80px, 80px);
+        center, 8rem, 8rem);
 
         .image__tours {
-            $height-image-tour: 60px * 10;
-            $width-image-tour: 100px * 6;
-            $border-radius-image-tour: 17px;
-            $border-image-tour: #3c502a solid 4px;
+            $height-image-tour: 30rem * 2;
+            $width-image-tour: 20rem * 3;
+            $border-radius-image-tour: 1.3rem + 0.4;
+            $border-image-tour: #3c502a solid 0.4rem;
 
             height: $height-image-tour;
             width: $width-image-tour;
@@ -101,29 +101,37 @@
             border:$border-image-tour;
 
             @media screen and (max-width: 619px) {
-                height: 400px;
-                width: 400px;
+                height: 40rem;
+                width: 40rem;
             }
 
             @media screen and (max-width: 410px) {
-                height: 290px;
-                width: 200px;
+                height: 29rem;
+                width: 20rem;
             }
 
             @media screen and (max-width: 208px) {
-                height: 290px;
-                width: 110px;
+                height: 19rem;
+                width: 14rem;
             }
 
-            @media screen and (max-width: 116px) {
-                height: 290px;
-                width: 80px;
+            @media screen and (max-width: 154px) {
+                height: 10rem;
+                width: 8rem;
             }
 
             @media screen and (max-width: 100px) {
-                height: 290px;
-                width: 30px;
+                height: 9rem;
+                width: 3rem;
             }
+
+            @media screen and (max-width: 85px) {
+                height: 9rem;
+                width: 3rem;
+                margin-bottom: 3rem; 
+            }
+
+
         }
     }
 
