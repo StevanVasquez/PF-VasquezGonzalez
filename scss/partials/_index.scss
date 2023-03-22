@@ -1,26 +1,18 @@
 //RESET PARA TODAS LAS 5 SECCIONES DE LOS ARCHIVOS HTML
-@mixin boxModelingReset($reset-padding, $reset-margin) {
-    padding: $reset-padding;
-    margin: $reset-padding;
-}
-@mixin fontSizeHtml($font-size-html) {
-    font-size: $font-size-html;
-}
-@mixin backgroundColorBody($background-color-body) {
-    background-color: $background-color-body;
-}
-
 * {
-    @include boxModelingReset(0px, 0px); 
+    padding: 0px;
+    margin: 0px;
 }
 
 html {
     $font-family-html: 'Montserrat', sans-serif;
-    @include fontSizeHtml(62.5%);
+    $font-size-html: 62.5%;
+
+    font-size: $font-size-html;
     font-family: $font-family-html;
     
     body {
-        @include backgroundColorBody(#98A379);
+        background-color: #98A379;
     }
 }
 
@@ -427,35 +419,31 @@ html {
 }
 
 // FOOTER PARA TODAS LAS 5 SECCIONES DE LOS ARCHIVOS HTML
-@mixin FooterCopyrightRedes ($display-footer, $flex-direcion-footer, $justify-content-footer,
-$background-color-footer){
-    display: $display-footer;
-    flex-direction: $flex-direcion-footer;
-    justify-content: $justify-content-footer;
-    background-color:$background-color-footer;
-
-}
-@mixin paragraphFooterCopyright ($padding-top-copyright, $color-copyright,
-$font-size-copyright, $font-style-copyright, $font-weight-copyright,
-$text-align-copyright) {
-    padding-top: $padding-top-copyright;
-    color: $color-copyright;
-    font-size: $font-size-copyright;
-    font-style: $font-style-copyright;
-    font-weight: $font-weight-copyright;
-    text-align: $text-align-copyright;
-}
-@mixin imagesFooterRedes ($width-images-redes, $height-images-redes,
-$padding-bottom-images-redes) {
-    width: $width-images-redes;
-    height: $height-images-redes;
-    padding-bottom: $padding-bottom-images-redes;
-}
-
 #footer__index__copyright {
+
+    @mixin FooterCopyrightRedes ($display-footer, $flex-direcion-footer, $justify-content-footer,
+    $background-color-footer){
+        display: $display-footer;
+        flex-direction: $flex-direcion-footer;
+        justify-content: $justify-content-footer;
+        background-color:$background-color-footer;
+    }
+
     @include FooterCopyrightRedes(flex, column, space-evenly, #A48F45);
     
     .paragraph__footer__copyright {
+
+        @mixin paragraphFooterCopyright ($padding-top-copyright, $color-copyright,
+        $font-size-copyright, $font-style-copyright, $font-weight-copyright,
+        $text-align-copyright) {
+            padding-top: $padding-top-copyright;
+            color: $color-copyright;
+            font-size: $font-size-copyright;
+            font-style: $font-style-copyright;
+            font-weight: $font-weight-copyright;
+            text-align: $text-align-copyright;
+        }
+
         @include paragraphFooterCopyright(0.9rem,#EEEEEA, 1rem, italic, normal,
         center);
 
@@ -465,7 +453,10 @@ $padding-bottom-images-redes) {
     }
 
     .imagen__footer__redes {
-        @include imagesFooterRedes (100%, 100%, 1.6rem);
+
+        width: 100%;
+        height: 100%;
+        padding-bottom: 1.6rem;
         
         .images__redes {
             $width-images-redes: 2.8rem + 0.3;
